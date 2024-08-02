@@ -22,6 +22,7 @@ output
 
 
 #O(n) time | O(n) space where n is the number of elements
+#Iterative
 # def spiralTraverse(array):
 #     result=[]
 #     startRow,endRow=0,len(array)-1
@@ -41,6 +42,7 @@ output
 #         endCol-=1
 #     return 
 
+#recursive
 def spiralTraverse(array):
     result=[]
     spiralFill(array,0,len(array)-1,0,len(array[0])-1,result)
